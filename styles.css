@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  scroll-behavior: smooth;
+  font-family: "Montserrat";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+  font-weight: 600; /* Adjust weight for headings */
+}
+
+p,
+a,
+button,
+input,
+select,
+textarea {
+  font-family: "Montserrat";
+}
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body::-webkit-scrollbar {
+  width: 4px; /* Minimum width of the scrollbar */
+  background-color: #f4f4f4; /* Background of the scrollbar */
+  transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fc6c24; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* On hover, increase scrollbar width */
+body::-webkit-scrollbar:hover {
+  width: 12px; /* Enlarged width on hover */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #e55a1a; /* Darker color on hover */
+}
+header {
+  background-color: #fef8f5;
+  padding: 15px 0;
+  border-bottom: 1px solid #f3e6e0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo .logo-img {
+  padding-left: 25px;
+  width: 40px;
+  height: 40px;
+}
+
+.header-logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fc6c24;
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fc6c24;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding-right: 25px;
+}
+
+.contact-link i {
+  font-size: 1.5rem;
+  border: 2px solid #fc6c24;
+  padding: 8px;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.contact-link span {
+  color: #333;
+  line-height: 1.2;
+}
+
+.contact-link:hover span {
+  color: #fc6c24; /* Text color changes smoothly on hover */
+}
+.contact-link:hover {
+  color: #fff;
+}
+
+.contact-link i:hover {
+  background-color: #fc6c24;
+  color: #fff;
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  color: #fc6c24;
+}
+
+.contact {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: url("hero-bg.jpg") no-repeat center center/cover;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 1.5rem;
+  text-align: left;
+  color: #fc6c24;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: black;
+  text-align: left;
+  width: 300px;
+  margin: 20px 0;
+}
+
+.btn-primary {
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 10px 20px;
+  background-color: #fc6c24;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fc6c24;
+  padding-bottom: 25px;
+  text-align: left;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 3px;
+  background-color: #fc6c24;
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+}
+.services {
+  padding: 40px 20px;
+  flex: 1;
+}
+
+.service-title {
+  border-bottom: #fc6c24;
+}
+
+.services h2 {
+  font-size: 2rem;
+  text-align: left;
+  color: #fc6c24;
+  margin-bottom: 20px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.services-left,
+.services-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: left;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.service-box img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.service-box h3 {
+  font-size: 1.2rem;
+  color: #fc6c24;
+  margin: 0;
+}
+
+.service-box p {
+  margin: 5px 0 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+footer {
+  background-color: #fef8f5;
+  padding-bottom: 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo .logo-img {
+  padding-left: 25px;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fc6c24;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.footer-social-container {
+  text-align: center;
+}
+
+.connect-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  padding-right: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fc6c24;
+  color: #fc6c24;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  background-color: #fc6c24;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    font-size: 0.9rem;
+  }
+
+  .services-container {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .services-left,
+  .services-right {
+    width: 100%;
+
+    align-items: center;
+  }
+
+  .service-box {
+    width: 100%;
+
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-container {
+    flex-direction: column;
+  }
+
+  .services-left,
+  .services-right {
+    width: 100%;
+  }
+
+  .service-box {
+    width: 100%;
+
+    margin-bottom: 15px;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}
+.btn-primary:hover {
+  background-color: #e05a1f;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+.service-box:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #000;
+}
