@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="icon" href="./images/logo-main.png" type="image/png" />
+    <link
+      rel="icon"
+      href="./images/logo-main.png/logo-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      href="./images/logo-main.png/logo-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./images/logo-main.png/logo-180x180.png"
+    />
+    <link
+      rel="icon"
+      href="./images/logo-main.png/logo-192x192.png"
+      sizes="192x192"
+    />
+    <link rel="stylesheet" href="./Styles/login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-box">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="username ">Username</label>
+            <input
+              type="text"
+              autocomplete="off"
+              id="username"
+              name="username"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+    <script src="./Logics/login.js"></script>
+  </body>
+</html>

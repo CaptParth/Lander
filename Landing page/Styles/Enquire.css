@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  scroll-behavior: smooth;
+  font-family: "Montserrat";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+p,
+a,
+button,
+input,
+select,
+textarea {
+  font-family: "Montserrat";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.background {
+  background: url("../images/landing-page-design_2.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px;
+}
+
+.form-container {
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.hero {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f36c37;
+  margin-bottom: 20px;
+  display: block;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+input,
+select {
+  margin-bottom: 8px;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+input::placeholder {
+  color: #aaa;
+  font-weight: normal;
+}
+
+select {
+  appearance: none;
+  background: white
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23666"><path d="M7 10l5 5 5-5H7z"/></svg>')
+    no-repeat right 10px center;
+  background-size: 12px;
+}
+
+input:focus,
+select:focus {
+  border-color: #f36c37;
+  box-shadow: 0 3px 8px rgba(243, 108, 55, 0.3);
+}
+
+input[type="submit"] {
+  background-color: #f36c37;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #d9534f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 90%;
+    padding: 15px 20px;
+  }
+
+  .hero {
+    font-size: 20px;
+  }
+
+  input,
+  select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  form {
+    align-items: center;
+  }
+
+  input,
+  select {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}

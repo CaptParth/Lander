@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiries Data</title>
+  <link rel="icon" href="./images/logo-main.png" type="image/png" />  
+  <link rel="icon" href="./images/logo-main.png/logo-192x192.png" sizes="192x192" />
+  <link rel="icon" href="./images/logo-main.png/logo-512x512.png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="./images/logo-main.png/logo-180x180.png">
+  <link rel="icon" href="./images/logo-main.png/logo-192x192.png" sizes="192x192" />
+  <link rel="stylesheet" href="./Styles/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database-compat.js"></script>
+  <script src="./Logics/dashboard.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="./healthcare.html" ><img src="images/logo-main.png"></div></a>
+        <div class="header-contact" data-aos="fade-left">
+            <a onclick="copy" class="contact-link">
+              <i class="fas fa-phone-alt"></i>
+              <span>Call us at <br> +91 92342 37920</span>
+            </a>
+          </div>
+    </header>
+  <div class="background">
+    <div class="form-container">
+      <h1>Enquiries Data</h1>
+      <div class="table-container">
+        <table id="data-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Mobile</th>
+              <th>Email</th>
+              <th>Service</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        
+        <!-- Pagination Controls -->
+        <div class="pagination">
+          <button id="prev" disabled>Previous</button>
+          <span id="page-info">Page 1</span>
+          <button id="next">Next</button>
+        </div>
+
+        <!-- Select Rows per Page -->
+        <div class="rows-select">
+          <label for="rows-per-page">Rows per page:</label>
+          <select id="rows-per-page">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

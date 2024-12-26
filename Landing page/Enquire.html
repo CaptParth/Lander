@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enquiry</title>
+    <link rel="icon" href="./images/logo-main.png" type="image/png" />
+    <link
+      rel="icon"
+      href="./images/logo-main.png/logo-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      href="./images/logo-main.png/logo-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./images/logo-main.png/logo-180x180.png"
+    />
+    <link
+      rel="icon"
+      href="./images/logo-main.png/logo-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+    />
+    <link rel="stylesheet" href="./Styles/Enquire.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="form-container">
+        <span class="hero">Enquire</span>
+        <form id="enquiry-form" method="post">
+          <input type="text" name="name" placeholder="Name" required /> <br />
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="Mobile Number"
+            required
+            style="width: 100%"
+          />
+          <br />
+          <input type="email" name="email" placeholder="Email" required />
+          <br />
+          <select name="services" required>
+            <option value="" disabled selected>Select Service</option>
+            <option value="Nursing">Nursing</option>
+            <option value="Medical Equipment">Medical Equipment</option>
+            <option value="Attendant">Attendant</option>
+            <option value="ICU at Home">ICU at Home</option>
+            <option value="Caregiver">Caregiver</option></select
+          ><br />
+          <input type="text" name="add" placeholder="Location" required />
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database-compat.js"></script>
+    <script src="./Logics/script.js"></script>
+  </body>
+</html>
